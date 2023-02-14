@@ -24,7 +24,7 @@ const Home: NextPage = () => {
                 alt="image equilibrium"
                 className="rounded-xl hover:bg-[#00FFF8]"
               />
-              <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden rounded-xl bg-[#00fff8] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-25"></div>
+              <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden rounded-xl bg-[#00fff8] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-50"></div>
               <svg
                 width="48"
                 height="48"
@@ -101,6 +101,23 @@ const Home: NextPage = () => {
             </span>
           </div>
         </div>
+        <footer className="mt-10 text-xs text-white">
+          Challenge by{" "}
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            className="text-blue-300 hover:text-blue-100 hover:underline"
+          >
+            Frontend Mentor
+          </a>
+          . Coded by{" "}
+          <a
+            href="https://github.com/ogznal"
+            className="text-blue-300 hover:text-blue-100 hover:underline"
+          >
+            ogznal
+          </a>
+          .
+        </footer>
       </main>
     </>
   );
