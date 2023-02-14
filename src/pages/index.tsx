@@ -16,20 +16,45 @@ const Home: NextPage = () => {
       <main
         className={`${outfit.className} flex min-h-screen flex-col items-center justify-center bg-[#0d192b]`}
       >
-        <div className="w-10/12 rounded-xl bg-[#14253d] p-6 md:w-1/4">
-          <img
-            src="/images/image-equilibrium.jpg"
-            alt="image equilibrium"
-            className="rounded-xl"
-          />
+        <div className="w-10/12 rounded-xl bg-[#14253d] p-6 shadow-2xl md:w-1/4">
+          <a href="https://frontendmentor.io">
+            <div className="group relative overflow-hidden bg-cover bg-no-repeat">
+              <img
+                src="/images/image-equilibrium.jpg"
+                alt="image equilibrium"
+                className="rounded-xl hover:bg-[#00FFF8]"
+              />
+              <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden rounded-xl bg-[#00fff8] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-25"></div>
+              <svg
+                width="48"
+                height="48"
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute top-1/2 left-1/2 -translate-x-6 -translate-y-6 opacity-0 transition duration-300 ease-in-out group-hover:opacity-100"
+              >
+                <g fill="none" fill-rule="evenodd">
+                  <path d="M0 0h48v48H0z" />
+                  <path
+                    d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z"
+                    fill="#FFF"
+                    fill-rule="nonzero"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
           <h1 className="mt-8 mb-4 text-2xl font-bold text-white">
-            Equilibrium #3429
+            <a
+              href="https://frontendmentor.io/"
+              className="hover:text-[#00FFF8]"
+            >
+              Equilibrium #3429
+            </a>
           </h1>
-          <p className="mb-4 text-[#8bacda]">
+          <p className="mb-4 text-[#8BACD9]">
             Our Equilibrium collection promotes balance and calm.
           </p>
           <div className="flex flex-row place-content-between">
-            <div className="flex flex-row items-center font-bold text-[#00fff7]">
+            <div className="flex flex-row items-center font-bold text-[#00fff8]">
               <svg
                 width="11"
                 height="18"
@@ -43,7 +68,7 @@ const Home: NextPage = () => {
               </svg>
               0.041 ETH
             </div>
-            <div className="flex flex-row items-center text-[#8bacda]">
+            <div className="flex flex-row items-center text-[#8BACD9]">
               <svg
                 width="17"
                 height="17"
@@ -65,9 +90,12 @@ const Home: NextPage = () => {
               alt="avatar"
               className="h-10 w-10 rounded-full ring-1 ring-white"
             />
-            <span className="ml-5 text-[#8bacda]">
+            <span className="ml-5 text-[#8BACD9]">
               Creation of{" "}
-              <a href="https://frontendmentor.io" className="text-white">
+              <a
+                href="https://frontendmentor.io"
+                className="text-white hover:text-[#00FFF8]"
+              >
                 Jules Wyvern
               </a>
             </span>
