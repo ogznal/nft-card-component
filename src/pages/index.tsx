@@ -88,7 +88,7 @@ const Home: NextPage = () => {
             <img
               src="/images/image-avatar.png"
               alt="avatar"
-              className="h-10 w-10 rounded-full ring-1 ring-white"
+              className="h-8 w-8 rounded-full ring-1 ring-white"
             />
             <span className="ml-5 text-[#8BACD9]">
               Creation of{" "}
